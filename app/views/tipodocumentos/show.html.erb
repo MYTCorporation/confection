@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cc:</strong>
+  <%= @tipodocumento.CC %>
+</p>
+
+<p>
+  <strong>Ti:</strong>
+  <%= @tipodocumento.TI %>
+</p>
+
+<p>
+  <strong>Ce:</strong>
+  <%= @tipodocumento.CE %>
+</p>
+
+<%= link_to 'Edit', edit_tipodocumento_path(@tipodocumento) %> |
+<%= link_to 'Back', tipodocumentos_path %>

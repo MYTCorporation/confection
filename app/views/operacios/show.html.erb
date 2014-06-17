@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @operacio.area %>
+</p>
+
+<p>
+  <strong>Cantidadproceso:</strong>
+  <%= @operacio.cantidadProceso %>
+</p>
+
+<p>
+  <strong>Maquinas:</strong>
+  <%= @operacio.maquinas %>
+</p>
+
+<p>
+  <strong>Tipostelas:</strong>
+  <%= @operacio.tiposTelas %>
+</p>
+
+<p>
+  <strong>Tiempoestandar:</strong>
+  <%= @operacio.TiempoEstandar %>
+</p>
+
+<p>
+  <strong>Instructorcargo:</strong>
+  <%= @operacio.instructorCargo %>
+</p>
+
+<p>
+  <strong>Insumos:</strong>
+  <%= @operacio.insumos %>
+</p>
+
+<p>
+  <strong>Referencia:</strong>
+  <%= @operacio.Referencia %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @operacio.Descripcion %>
+</p>
+
+<%= link_to 'Editar', edit_operacio_path(@operacio) %> |
+<%= link_to 'Atras', operacios_path %>

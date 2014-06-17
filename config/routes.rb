@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :instructors
+
+  resources :tipodocumentos
+
+  resources :adminprincipals
+
+  resources :operacios
+
   get 'informacion/index'
 
   get 'inicio/index'

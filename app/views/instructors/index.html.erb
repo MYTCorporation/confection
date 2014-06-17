@@ -1,0 +1,50 @@
+<h1>Listado de Instructores</h1>
+
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>Tipodocumento</th>
+      <th>Numedoc</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Genero</th>
+      <th>Direccion</th>
+      <th>Correo</th>
+      <th>Telefono</th>
+      <th>Area</th>
+      <th>Rol</th>
+      <th>Lineacargo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @instructors.each do |instructor| %>
+      <tr>
+        <td><%= instructor.tipodocumento %></td>
+        <td><%= instructor.numedoc %></td>
+        <td><%= instructor.nombre %></td>
+        <td><%= instructor.apellido %></td>
+        <td><%= instructor.genero %></td>
+        <td><%= instructor.direccion %></td>
+        <td><%= instructor.correo %></td>
+        <td><%= instructor.telefono %></td>
+        <td><%= instructor.area %></td>
+        <td><%= instructor.rol %></td>
+        <td><%= instructor.lineacargo %></td>
+        <td><%= link_to 'Ver', instructor %></td>
+        <td><%= link_to 'Editar', edit_instructor_path(instructor) %></td>
+        <td><%= link_to 'Eliminar', instructor, method: :delete, data: { confirm: 'Seguro que desea Eliminar?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+  
+  <div class="btn btn-primary btn-lg">
+   <%= link_to 'Nuevo instructor', new_instructor_path %>
+  </div>
+  <div class="btn btn-primary btn-lg">
+   <%= link_to 'Atras', adminprincipals_path, :method=>"get" %>
+  </div>

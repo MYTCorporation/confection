@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  area: MyString
+  cantidadProceso: MyString
+  maquinas: MyString
+  tiposTelas: MyString
+  TiempoEstandar: MyString
+  instructorCargo: MyString
+  insumos: MyString
+  Referencia: MyString
+  Descripcion: MyString
+
+two:
+  area: MyString
+  cantidadProceso: MyString
+  maquinas: MyString
+  tiposTelas: MyString
+  TiempoEstandar: MyString
+  instructorCargo: MyString
+  insumos: MyString
+  Referencia: MyString
+  Descripcion: MyString

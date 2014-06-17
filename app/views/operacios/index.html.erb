@@ -1,0 +1,45 @@
+<h1>Listado de operaciones</h1>
+
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Cantidadproceso</th>
+      <th>Maquinas</th>
+      <th>Tipostelas</th>
+      <th>Tiempoestandar</th>
+      <th>Instructorcargo</th>
+      <th>Insumos</th>
+      <th>Referencia</th>
+      <th>Descripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @operacios.each do |operacio| %>
+      <tr>
+        <td><%= operacio.area %></td>
+        <td><%= operacio.cantidadProceso %></td>
+        <td><%= operacio.maquinas %></td>
+        <td><%= operacio.tiposTelas %></td>
+        <td><%= operacio.TiempoEstandar %></td>
+        <td><%= operacio.instructorCargo %></td>
+        <td><%= operacio.insumos %></td>
+        <td><%= operacio.Referencia %></td>
+        <td><%= operacio.Descripcion %></td>
+        <td><%= link_to 'Show', operacio %></td>
+        <td><%= link_to 'Edit', edit_operacio_path(operacio) %></td>
+        <td><%= link_to 'Destroy', operacio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<div class="btn btn-primary btn-lg">
+ <%= link_to 'Nueva operacion', new_operacio_path %>
+</div>
+<div class="btn btn-primary btn-lg">
+ <%= link_to 'Atras', adminprincipals_path, :method=>"get" %>
+</div>

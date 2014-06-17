@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipodocumento_id: 
+  numedoc: MyString
+  nombre: MyString
+  apellido: MyString
+  genero: false
+  direccion: MyString
+  correo: MyString
+  telefono: MyString
+  area: MyString
+  rol: MyString
+  lineacargo: MyString
+
+two:
+  tipodocumento_id: 
+  numedoc: MyString
+  nombre: MyString
+  apellido: MyString
+  genero: false
+  direccion: MyString
+  correo: MyString
+  telefono: MyString
+  area: MyString
+  rol: MyString
+  lineacargo: MyString

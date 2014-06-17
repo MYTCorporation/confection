@@ -1,0 +1,53 @@
+<%= form_for(@operacio) do |f| %>
+  <% if @operacio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@operacio.errors.count, "error") %> prohibited this operacio from being saved:</h2>
+
+      <ul>
+      <% @operacio.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidadProceso %><br>
+    <%= f.text_field :cantidadProceso %>
+  </div>
+  <div class="field">
+    <%= f.label :maquinas %><br>
+    <%= f.text_field :maquinas %>
+  </div>
+  <div class="field">
+    <%= f.label :tiposTelas %><br>
+    <%= f.text_field :tiposTelas %>
+  </div>
+  <div class="field">
+    <%= f.label :TiempoEstandar %><br>
+    <%= f.text_field :TiempoEstandar %>
+  </div>
+  <div class="field">
+    <%= f.label :instructorCargo %><br>
+    <%= f.text_field :instructorCargo %>
+  </div>
+  <div class="field">
+    <%= f.label :insumos %><br>
+    <%= f.text_field :insumos %>
+  </div>
+  <div class="field">
+    <%= f.label :Referencia %><br>
+    <%= f.text_field :Referencia %>
+  </div>
+  <div class="field">
+    <%= f.label :Descripcion %><br>
+    <%= f.text_field :Descripcion %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Registrar"%>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CC: MyString
+  TI: MyString
+  CE: MyString
+
+two:
+  CC: MyString
+  TI: MyString
+  CE: MyString
