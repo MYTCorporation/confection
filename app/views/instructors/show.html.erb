@@ -2,7 +2,7 @@
 
 <p>
   <strong>Tipodocumento:</strong>
-  <%= @instructor.tipodocumento %>
+  <%= mostrar_Tipodocumento(@instructor.Tipodocumento) %>
 </p>
 
 <p>
@@ -21,9 +21,10 @@
 </p>
 
 <p>
-  <strong>Genero:</strong>
-  <%= @instructor.genero %>
+<strong>Genero:</strong>
+<%= mostrar_genero(@instructor.genero) %>
 </p>
+
 
 <p>
   <strong>Direccion:</strong>
@@ -55,5 +56,5 @@
   <%= @instructor.lineacargo %>
 </p>
 
-<%= link_to 'Edit', edit_instructor_path(@instructor) %> |
-<%= link_to 'Back', instructors_path %>
+<%= link_to 'Editar', edit_instructor_path(@instructor) %> |
+<%= link_to 'Atras', instructors_path %>

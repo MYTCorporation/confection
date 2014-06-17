@@ -28,9 +28,10 @@
     <%= f.text_field :apellido %>
   </div>
   <div class="field">
-    <%= f.label :genero %><br>
-    <%= f.check_box :genero %>
-  </div>
+    Masculino: <%= f.radio_button(:genero, true) %>
+    Femenino: <%= f.radio_button(:genero, false) %>
+</div>
+
   <div class="field">
     <%= f.label :direccion %><br>
     <%= f.text_field :direccion %>

@@ -5784,20 +5784,32 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 .texto-1{
+  background-image: url(../../assets/images/insumos.jpg);
   border:solid;
-  border-radius: 4px;
-  color:gray;
-  border-color: gray;
-  margin:50px 0px 0px 305px;
+  border-radius: 8px;
+  color:black;
+  border-color: black;
+  margin:0px 0px 0px 330px;
   width: 800px;
+  height: 460px;
 }
 
 .boton-1{
   border:solid;
-  border-radius: 4px;
-  border-color: gray;
+  border-radius: 8px;
+  border-color: black;
   width: 300px;
   padding: 10px;
-  margin:-177px 0px 0px 0px;
-  height: 180px;
+  margin:-460px 0px 0px 0px;
+  height: 460px;
+}
+.general{
+  border:solid;
+  border-radius:4px;
+  border-color:black;
+  width: 1170px;
+  margin:25px 25px 25px 60px;
+  height: 500px;
+  padding: 15px;
+  background-color:#ADD8E6;
 }
