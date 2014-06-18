@@ -1,0 +1,85 @@
+<%= form_for(@operarium) do |f| %>
+  <% if @operarium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@operarium.errors.count, "error") %> prohibited this operarium from being saved:</h2>
+
+      <ul>
+      <% @operarium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Tipodocumentos_id %><br>
+    <%= f.text_field :Tipodocumentos_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Numerodocumento %><br>
+    <%= f.text_field :Numerodocumento %>
+  </div>
+  <div class="field">
+    <%= f.label :Nombres %><br>
+    <%= f.text_field :Nombres %>
+  </div>
+  <div class="field">
+    <%= f.label :Apellidos %><br>
+    <%= f.text_field :Apellidos %>
+  </div>
+  <div class="field">
+    Masculino: <%= f.radio_button(:Genero, true) %>
+    Femenino: <%= f.radio_button(:Genero, false) %>
+  </div>
+  <div class="field">
+    <%= f.label :Direccion %><br>
+    <%= f.text_field :Direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :Correo %><br>
+    <%= f.text_field :Correo %>
+  </div>
+  <div class="field">
+    <%= f.label :Telefono %><br>
+    <%= f.text_field :Telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :Celular %><br>
+    <%= f.text_field :Celular %>
+  </div>
+  <div class="field">
+    <%= f.label :DirectorArea %><br>
+    <%= f.text_field :DirectorArea %>
+  </div>
+  <div class="field">
+    <%= f.label :instructors_id %><br>
+    <%= f.text_field :instructors_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Calificacion %><br>
+    <%= f.text_field :Calificacion %>
+  </div>
+  <div class="field">
+    <%= f.label :Inicial %><br>
+    <%= f.text_field :Inicial %>
+  </div>
+  <div class="field">
+    <%= f.label :Fecha %><br>
+    <%= f.text_field :Fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :Inicio %><br>
+    <%= f.date_select :Inicio %>
+  </div>
+  <div class="field">
+    <%= f.label :Fecha %><br>
+    <%= f.text_field :Fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :Final %><br>
+    <%= f.date_select :Final %>
+  </div>
+  <div class="actions">
+    <%= f.submit"CREAR" %>
+  </div>
+<% end %>

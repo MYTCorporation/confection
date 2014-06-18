@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :operaria
+
+  resources :profesors
+
   resources :rols
 
   resources :instructors

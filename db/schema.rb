@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140618181456) do
+ActiveRecord::Schema.define(version: 20140618205316) do
 
   create_table "adminprincipals", force: true do |t|
     t.datetime "created_at"
@@ -63,6 +63,35 @@ ActiveRecord::Schema.define(version: 20140618181456) do
     t.string   "insumos"
     t.string   "Referencia"
     t.string   "Descripcion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "operaria", force: true do |t|
+    t.integer  "Tipodocumentos_id"
+    t.string   "Numerodocumento"
+    t.string   "Nombres"
+    t.string   "Apellidos"
+    t.boolean  "Genero"
+    t.string   "Direccion"
+    t.string   "Correo"
+    t.string   "Telefono"
+    t.string   "Celular"
+    t.string   "DirectorArea"
+    t.integer  "instructors_id"
+    t.string   "Calificacion"
+    t.string   "Inicial"
+    t.string   "Fecha"
+    t.date     "Inicio"
+    t.date     "Final"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "operaria", ["Tipodocumentos_id"], name: "index_operaria_on_Tipodocumentos_id"
+  add_index "operaria", ["instructors_id"], name: "index_operaria_on_instructors_id"
+
+  create_table "profesors", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end

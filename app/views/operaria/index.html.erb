@@ -1,0 +1,57 @@
+<h1>Operaria</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipodocumentos</th>
+      <th>Numerodocumento</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Genero</th>
+      <th>Direccion</th>
+      <th>Correo</th>
+      <th>Telefono</th>
+      <th>Celular</th>
+      <th>Directorarea</th>
+      <th>Instructors</th>
+      <th>Calificacion</th>
+      <th>Inicial</th>
+      <th>Fecha</th>
+      <th>Inicio</th>
+      <th>Fecha</th>
+      <th>Final</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @operaria.each do |operarium| %>
+      <tr>
+        <td><%= operarium.Tipodocumentos %></td>
+        <td><%= operarium.Numerodocumento %></td>
+        <td><%= operarium.Nombres %></td>
+        <td><%= operarium.Apellidos %></td>
+        <td><%= operarium.Genero %></td>
+        <td><%= operarium.Direccion %></td>
+        <td><%= operarium.Correo %></td>
+        <td><%= operarium.Telefono %></td>
+        <td><%= operarium.Celular %></td>
+        <td><%= operarium.DirectorArea %></td>
+        <td><%= operarium.instructors %></td>
+        <td><%= operarium.Calificacion %></td>
+        <td><%= operarium.Inicial %></td>
+        <td><%= operarium.Fecha %></td>
+        <td><%= operarium.Inicio %></td>
+        <td><%= operarium.Fecha %></td>
+        <td><%= operarium.Final %></td>
+        <td><%= link_to 'Ver', operarium %></td>
+        <td><%= link_to 'Editar', edit_operarium_path(operarium) %></td>
+        <td><%= link_to 'Eliminar', operarium, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Operario', new_operarium_path %>

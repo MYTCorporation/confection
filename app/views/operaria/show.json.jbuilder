@@ -1,0 +1,1 @@
+json.extract! @operarium, :id, :Tipodocumentos_id, :Numerodocumento, :Nombres, :Apellidos, :Genero, :Direccion, :Correo, :Telefono, :Celular, :DirectorArea, :instructors_id, :Calificacion, :Inicial, :Fecha, :Inicio, :Fecha, :Final, :created_at, :updated_at
