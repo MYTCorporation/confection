@@ -5813,3 +5813,12 @@ button.close {
   padding: 15px;
   background-color:#ADD8E6;
 }
+.corporacion{
+  font-family: arial;
+  font-size: 20px;
+ 
+}
+.imagen{
+  background-image: url(../images/cosas.JPEG);
+  height: 70px;
+}

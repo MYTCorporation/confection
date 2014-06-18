@@ -35,9 +35,9 @@
         <td><%= operacio.insumos %></td>
         <td><%= operacio.Referencia %></td>
         <td><%= operacio.Descripcion %></td>
-        <td><%= link_to 'Show', operacio %></td>
-        <td><%= link_to 'Edit', edit_operacio_path(operacio) %></td>
-        <td><%= link_to 'Destroy', operacio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'ver', operacio %></td>
+        <td><%= link_to 'Editar', edit_operacio_path(operacio) %></td>
+        <td><%= link_to 'Eliminar', operacio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
