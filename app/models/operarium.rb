@@ -1,4 +1,4 @@
 class Operarium < ActiveRecord::Base
-  belongs_to :Tipodocumentos
+  belongs_to :tipodocumentos
   belongs_to :instructors
 end
