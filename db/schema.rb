@@ -11,23 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140617152905) do
-
-  create_table "administradors", force: true do |t|
-    t.string   "tipodoc"
-    t.string   "numedoc"
-    t.string   "nombre"
-    t.string   "apellido"
-    t.boolean  "genero"
-    t.string   "direccion"
-    t.string   "correo"
-    t.string   "telefono"
-    t.string   "area"
-    t.string   "rol"
-    t.string   "lineacargo"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140618181456) do
 
   create_table "adminprincipals", force: true do |t|
     t.datetime "created_at"
@@ -79,6 +63,14 @@ ActiveRecord::Schema.define(version: 20140617152905) do
     t.string   "insumos"
     t.string   "Referencia"
     t.string   "Descripcion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rols", force: true do |t|
+    t.string   "Administrador"
+    t.string   "Instructor"
+    t.string   "Aprendiz"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
